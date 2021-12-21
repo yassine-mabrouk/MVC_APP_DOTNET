@@ -1,0 +1,25 @@
+
+
+@model System.Collections.Generic.IList<webProject.Model.Student>
+
+<h1 style="margin-top: 70px;">List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">score</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr scope="row">
+                <th>@student.Id</th>
+                <th>@student.Name</th>
+                <th>@student.Score</th>
+            </tr>
+        }
+    </tbody>
+</table>
